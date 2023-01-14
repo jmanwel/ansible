@@ -1,0 +1,9 @@
+{
+"interfaces":[
+	{"interface": "gi1/0", "description":"some_desc" ,"ip":"10.0.0.1", "subnet":"255.255.255.0"},
+	{"interface": "gi1/1", "description":"some_desc" ,"ip":"10.0.0.2", "subnet":"255.255.255.0"},
+	{"interface": "gi2/0", "description":"some_desc" ,"ip":"10.0.0.3", "subnet":"255.255.255.0"},
+	{"interface": "gi2/1", "description":"some_desc" ,"ip":"10.0.0.4", "subnet":"255.255.255.0"},
+	{"interface": "gi2/2", "description":"some_desc" ,"ip":"10.0.0.5", "subnet":"255.255.255.0"}
+]
+}

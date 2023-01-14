@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  gather_facts: no
+  vars_files:
+   - interfaces.json
+
+  tasks:
+  - name: create snippet
+    template:
+      src: interfaces.j2
+      dest: foo.cfg 
+
+  - debug: msg="{{ lookup('file','foo.cfg') }} is variable"
+...

@@ -1,0 +1,15 @@
+---
+  - name: Shell
+    hosts: localhost
+    tasks:
+    - name: Ping google
+      shell: 
+        "ping -c 1 8.8.8.8"
+      register: output
+
+
+    - name: Show output
+      debug:
+        var: output.stdout_lines 
+      #when: "output.stdout_lines is search('64')"
+      #loop: output.stdout_lines
